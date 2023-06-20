@@ -1,10 +1,13 @@
 # DLLSignalTester
- This is for testing alerts based on dll loading rules for exe names and dll that you can specify.
+ This is for testing alerts based on dll loading rules or invoking processes with specific name of executable/dll.
 
 # Purpose
  If you have monitoring software that detects exe processes and dll loaded by them BUT you don't have acccess to software you want to test - you can imitiate that with this one.
 
-# Usage
- Just run
+# Usage  
 
-```ConsoleApp.exe <path to attached Dll with your own file name>```
+
+```ConsoleApp.exe -fork <path to exe> ``` - imitate process creating of exe you 
+
+```ConsoleApp.exe -load <path to dll in project> ``` - this will imitate side loading of dll that in this case returns Hello World
+
